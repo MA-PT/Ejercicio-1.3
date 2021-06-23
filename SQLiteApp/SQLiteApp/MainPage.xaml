@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteApp.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ver Lista" x:Name="toolbarmenu" 
+                     Order="Primary"
+                     Priority="0"
+                     Clicked="toolbarmenu_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Entry x:Name="nombre" Placeholder="Ingresa tu Nombre" Margin="24,10"/>
+        <Entry x:Name="apellido" Placeholder="Ingresa tu Apellido" Margin="24,10"/>
+        <Entry x:Name="edad" Keyboard="Numeric" Placeholder="Ingresa tu Edad" Margin="24,10"/>
+        <Entry x:Name="correo" Keyboard="Email" Placeholder="Ingresa tu Email" Margin="24,10"/>
+        <Entry x:Name="direccion" Placeholder="Ingresa tu Dirección" Margin="24,10"/>
+        <Label Text="Fecha de Nacimiento" Margin="24,0" FontSize="18" />
+        <DatePicker x:Name="FNacimiento" Margin="24,0" />
+
+        <Button x:Name="btnSalvar" Clicked="btnSalvar_Clicked" TextColor="White" BackgroundColor="#2196F3" CornerRadius="5" Margin="24,10" Text="Guardar"/>
+    </StackLayout>
+
+</ContentPage>

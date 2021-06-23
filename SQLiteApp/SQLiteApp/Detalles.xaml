@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteApp.Detalles">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="id" Text="{Binding Id}" IsVisible="false" />
+            <Entry x:Name="nombre" Text="{Binding Nombre}" Placeholder="Ingresa tu Nombre" Margin="24,10"/>
+            <Entry x:Name="apellido" Text="{Binding Apellidos}" Placeholder="Ingresa tu Apellido" Margin="24,10"/>
+            <Entry x:Name="edad" Text="{Binding Edad}" Keyboard="Numeric" Placeholder="Ingresa tu Edad" Margin="24,10"/>
+            <Entry x:Name="correo" Text="{Binding Correo}" Keyboard="Email" Placeholder="Ingresa tu Email" Margin="24,10"/>
+            <Entry x:Name="direccion" Text="{Binding Direccion}" Placeholder="Ingresa tu Dirección" Margin="24,10"/>
+            <Label Text="Fecha de Nacimiento" Margin="24,0" FontSize="18" />
+            <DatePicker x:Name="FNacimiento" Date="{Binding Fechanac}" Margin="24,0" />
+
+            <Button x:Name="userUpdate" Clicked="userUpdate_Clicked" TextColor="White" BackgroundColor="#2196F3" CornerRadius="5" Margin="24,10,24,0" Text="Editar"/>
+            <Button x:Name="userDelete" Clicked="userDelete_Clicked" TextColor="White" BackgroundColor="#FF0000" CornerRadius="5" Margin="24,0" Text="Eliminar"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
